@@ -1,0 +1,6 @@
+logging:
+  config: classpath:logback-access.xml
+  level:
+    root: INFO
+    org.zalando.logbook: TRACE
+    org.zalando.logbook.json.CompactingJsonBodyFilter: WARN

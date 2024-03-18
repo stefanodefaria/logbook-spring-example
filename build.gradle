@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.zalando:logbook-spring-boot-starter:3.7.2'
+    compile 'org.zalando:logbook-servlet:3.7.2:javax'
+    compile 'org.zalando:logbook-json:3.7.2'
+
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'ch.qos.logback:logback-access'
+    compile 'ch.qos.logback:logback-core'
+
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test:2.6.2'
+}
+
+test {
+    useJUnitPlatform()
+}
