@@ -4,3 +4,8 @@ logging:
     root: INFO
     org.zalando.logbook: TRACE
     org.zalando.logbook.json.CompactingJsonBodyFilter: WARN
+
+server.port: 8081
+
+logbook:
+  secure-filter.enabled: true
